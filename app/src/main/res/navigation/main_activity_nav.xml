@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav"
+    app:startDestination="@id/anaSayfaFragment">
+
+    <fragment
+        android:id="@+id/anaSayfaFragment"
+        android:name="com.adilegungor.navigationcomponenttask1.AnaSayfaFragment"
+        android:label="fragment_ana_sayfa"
+        tools:layout="@layout/fragment_ana_sayfa" >
+        <action
+            android:id="@+id/action_anaSayfaFragment_to_detayFragment"
+            app:destination="@id/detayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detayFragment"
+        android:name="com.adilegungor.navigationcomponenttask1.DetayFragment"
+        android:label="fragment_detay"
+        tools:layout="@layout/fragment_detay" >
+        <action
+            android:id="@+id/action_detayFragment_to_ciktiFragment"
+            app:destination="@id/ciktiFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ciktiFragment"
+        android:name="com.adilegungor.navigationcomponenttask1.CiktiFragment"
+        android:label="fragment_cikti"
+        tools:layout="@layout/fragment_cikti" />
+</navigation>
